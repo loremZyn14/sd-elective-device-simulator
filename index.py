@@ -17,10 +17,11 @@ while True:
         ledNumber = 9
     if ledNumber == 10:
         ledNumber = 0
-    cp.pixels[num] = 1
+    cp.pixels[ledNumber] = 1
     time.sleep(0.5)
-    cp.pixels[num] =0
+    cp.pixels[ledNumber] =0
     if cp.switch:
         ledNumber += 1
     else:
         ledNumber -= 1
+   
